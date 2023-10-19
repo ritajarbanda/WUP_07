@@ -27,10 +27,11 @@ state of a patient must be died or alive - we adjust that as well
   
 # Your Question - Is dying independent of sex?
 
+## Methods
 
-
-
-
+Based on the data we found in KRdata, we will try and find out if there is a difference between men and women. Is there any difference in how covid kills men and women. Is covid more harmful to men? Or is it more harmful to women?
+We are going to use the CandP helper files to compare two categorical data types Sex and Results Because this is a cat-cat problem we will first create a bar chart, then we will run favstates to show graphical and numerical results.
+For inferential results we are going to run a Chi-Squared test which will tell us if there is a difference in the data but not where. 
 
 ## Graphical results - use ggplot commands to do this  
 

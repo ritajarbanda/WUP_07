@@ -35,15 +35,24 @@ For inferential results we are going to run a Chi-Squared test which will tell u
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+dd2 <- kRdata %>% group_by(result,Sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
 
-  
+# the group_by followed by summarize(count=n())
 
+basicC <- ggplot(dd2,aes(x=result,y=count,fill=Sex))
+basicC + geom_bar(stat="identity",position="dodge")
 
+#Now for percentage plot
 
+basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
 
+  When viewing the first chart, it shows that more women got COVID than men.
+However when looking at the second chart, the results show that of whole group of people that got COVID, more men were being killed with COVID than women.  
 
-  
 ## Numerical results
 
 

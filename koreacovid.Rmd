@@ -75,3 +75,4 @@ After running our inferential test, we found our p-value to be 0.0009 which is f
 
 ## Conclusions
 
+First. we looked at the data available in kRdata and confirmed that this was a category~category problem. After we determined this we knew we need to use or Cat~Cat helper files to run a bar chart using ggplot. After seeing the result of the ggplot, we determined that of the people who get COVID, women appear to get COVID at higher rate. It also appears that of the people who got COVID, men died at a higher rate than women. However, we needed to run more test to confirm.  

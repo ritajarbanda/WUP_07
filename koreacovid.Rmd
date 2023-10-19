@@ -55,6 +55,13 @@ However when looking at the second chart, the results show that of whole group o
 
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+``` 
+
+The data above confirmed the data we see in the bar chart ggplot results. Which was that women got COVID at a higher rate than men. However, of people who got covid, more men died than women.  
 
 ## Inferential results 
 
